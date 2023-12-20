@@ -1,0 +1,67 @@
+<form (ngSubmit)="onSubmit()">
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>CUSTOMER MANAGEMENT</h3>
+        </div>
+        <hr>
+        <h5 style="margin-left: 5%;">Name: {{admin1.name}}</h5>
+        <h5 style="margin-left: 5%;">ID: {{admin1.id}}</h5>
+        <hr>
+        <ul class="list-unstyled components">
+            <li><a class="" href="/cust/{{admin1.id}}" style="font-weight: 600;margin-top: -12px;">Home</a></li>
+            <li><a class=""  href="/viewdetail/{{admin1.id}}" style="font-weight: 600;">View Details<svg xmlns="http://www.w3.org/2000/svg" class="img1" height="1em" viewBox="0 0 512 512">! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></li>
+            <li><a class="" href="/updatedetail/{{admin1.id}}" style="font-weight: 600;">Update Details<svg xmlns="http://www.w3.org/2000/svg" class="img2" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></li>
+            <li><a class="" href="/assignasset/{{admin1.id}}" style="font-weight: 600;">Assign Assets<svg xmlns="http://www.w3.org/2000/svg" class="img3" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></li>
+            <li><a class="" href="/cart/{{admin1.id}}" style="font-weight: 600;">View Assets<svg xmlns="http://www.w3.org/2000/svg" class="img4" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></li>
+            <li><a class="" href="/updatecart/{{admin1.id}}" style="font-weight: 600;">Update Assets<svg xmlns="http://www.w3.org/2000/svg" class="img5" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></li>
+            <li><a class="" href="/dash" style="font-weight: 600;">Go to Dashboard<svg xmlns="http://www.w3.org/2000/svg" class="img5" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></li>
+          </ul>
+    </nav>
+    <div class="page" style="margin-left: 260px;">
+        <div class="container rounded mt-0 mb-5">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-15"><img class="rounded-circle mt-5" width="150px" src="/assets/images/MicrosoftTeams-image (12).png"><span class="font-weight-bold"></span><span class="text-black-50">Profile Picture</span><span> </span></div>
+                    
+                </div>
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Update Details</h4>
+                        </div>
+                        <!-- <div class="row mt-2">    
+                        </div> -->
+                        
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" [(ngModel)]="admin1.name" name="name"></div>
+                            <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" [(ngModel)]="admin1.surname" placeholder="surname" name="surname"></div>
+                            <div class="col-md-12"><label class="labels">DOB</label><input type="text" class="form-control" placeholder="enter date of birth" [(ngModel)]="admin1.dob" name="dob"></div>
+                            <div class="col-md-12"><label class="labels">Gender</label><input type="text" class="form-control" placeholder="enter gender" [(ngModel)]="admin1.gender" name="gender"></div>
+                            <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" [(ngModel)]="admin1.phone" name="phone"></div>
+                            <div class="col-md-12"><label class="labels">Aadhar Number</label><input type="text" class="form-control" placeholder="enter aadhar number" [(ngModel)]="admin1.aadhar" name="aadhar"></div>
+                            <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" [(ngModel)]="admin1.email" name="email"></div>
+                            <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address" [(ngModel)]="admin1.address" name="address"></div>
+                            <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" [(ngModel)]="admin1.country" name="country"></div>
+                            <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" [(ngModel)]="admin1.state" placeholder="state" name="state"></div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Update Profile</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="label1">
+                    <div class="p-3 py-5" id="label">
+                        <div class="d-flex justify-content-between align-items-center experience" id="label1"><h4>Connection Details</h4></div><br>
+                        <div class="d-flex justify-content-between align-items-center experience" id="label1"><h6 id="label1">Connection Type</h6></div>
+                        <input type="text" class="form-control" [(ngModel)]="admin1.connectionType" placeholder="home/office" name="connectionType"><br>
+                        <div class="d-flex justify-content-between align-items-center experience font-weight-bold"><h6 id="label1">Connection Plan</h6></div>
+                        <input type="text" class="form-control" [(ngModel)]="admin1.connectionPlan" placeholder="" name="connectionPlan">
+                        </div>
+                        <div class="col-md-6" id="size">
+                        <div class="d-flex justify-content-between align-items-center experience font-weight-bold"><h6>Plan Details</h6></div>
+                        <div class="label">Speed<input type="text" class="form-control" [(ngModel)]="admin1.speed" placeholder="" name="speed"></div>
+                        <div class="label">Monthly Data<input type="text" class="form-control" [(ngModel)]="admin1.data" placeholder="" name="data"></div>
+                        <div class="label">Monthly Rent<input type="text" class="form-control" [(ngModel)]="admin1.rent" placeholder="" name="rent"></div>
+                        
+                    </div>
+                </div>
+            </div>
